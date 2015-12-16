@@ -134,7 +134,7 @@ pkg_postinst_${PN}() {
     $TZ_USER_DESKTOP     User                 false
     $TZ_USER_ICONS       User::Home           true
     $TZ_USER_PACKAGES    User                 false
-    ENDOFCAT
+ENDOFCAT
     LANG= sort | while read skelname context transmute; do
     	mkdir -p "$skelname"
     	chsmack -a "$context" "$skelname"
